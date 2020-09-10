@@ -34,7 +34,7 @@
          return   req.on('end',() =>{
             const parsedbody = Buffer.concat(body).toString();
             console.log(parsedbody);
-            const message=parsedbody.split('=')[1];
+            const message=parsedbody.split('=')[0];
             fs.writeFile('message.txt',message,(err) => {
                 res.statusCode=302;
                 res.setHeader('location',('/'));
@@ -48,6 +48,7 @@
     res.write('<head><title>My first Page</title></head>');
     res.write('<body><h1>hello welcome to the page</h1> </body>');
     res.write('</html>');
+
     res.end();
 };
 // module.exports = requesthandler;
@@ -57,4 +58,9 @@
 module.exports = {
     handler :requesthandler,
     sometext:'some hard code'
-};
+}
+//or
+
+//exports.handler = requesthandler;
+//exports.sometext ='some hard code'
+;

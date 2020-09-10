@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joseph-Raju/nodejs.git"
+  },
+  "author": "Joseph Raju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joseph-Raju/nodejs/issues"
+  },
+  "homepage": "https://github.com/Joseph-Raju/nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

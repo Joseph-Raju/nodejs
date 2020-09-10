@@ -12,6 +12,7 @@ http.createServer(check())*/
     
 const route=require('./route.js');
 
+console.log(route.sometext);
 
 const server = http.createServer(route.handler);
  
